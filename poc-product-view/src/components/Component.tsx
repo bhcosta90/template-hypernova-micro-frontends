@@ -14,7 +14,7 @@ import {
   Price
 } from '@dafiti/poc-lib-frontend-new-web'
 
-type ComponentType = {
+export type ComponentType = {
   name: string,
   price: string,
   urlImage: string,

@@ -1,9 +1,9 @@
 import React from 'react';
-import Component from './Component';
+import Component, { ComponentType } from './Component';
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyle, DefaultTheme } from '@dafiti/poc-lib-frontend-new-web'
 
-const App = (props: any) => <ThemeProvider theme={DefaultTheme}>
+const App = (props: ComponentType) => <ThemeProvider theme={DefaultTheme}>
     <div className='hypernova'><Component {...props} /></div>
     <GlobalStyle />
 </ThemeProvider>
