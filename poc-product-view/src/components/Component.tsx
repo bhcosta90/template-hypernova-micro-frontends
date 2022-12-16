@@ -14,8 +14,6 @@ import {
   Price
 } from '@dafiti/poc-lib-frontend-new-web'
 
-import {Button} from 'react-bootstrap'
-
 export type ComponentType = {
   name: string,
   price: string,

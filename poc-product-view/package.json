@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "tsc && webpack --mode production",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider && tsc && webpack --mode production",
     "dev": "vite",
     "start": "node dist/server.js",
     "tsc": "tsc"
@@ -39,7 +39,6 @@
     "hypernova-react": "^2.1.0",
     "prop-types": "^15.7.2",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.6"
   }
