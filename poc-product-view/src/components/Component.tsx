@@ -14,6 +14,8 @@ import {
   Price
 } from '@dafiti/poc-lib-frontend-new-web'
 
+import {Button} from 'react-bootstrap'
+
 export type ComponentType = {
   name: string,
   price: string,
@@ -31,6 +33,7 @@ export type ComponentType = {
 }
 
 const Component = (props: ComponentType) => <Card>
+  <Button variant="primary" onClick={() => alert('click me')}>click here!</Button>
   <CardImage>
     <CardImageHeader>
       {props.black && 
