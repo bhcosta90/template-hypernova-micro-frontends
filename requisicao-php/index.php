@@ -14,7 +14,7 @@ curl_setopt_array($curl, array(
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => 'POST',
-  CURLOPT_POSTFIELDS => '{
+  CURLOPT_POSTFIELDS =>'{
     "content": {
         "name": "App",
         "data": {
@@ -45,21 +45,19 @@ curl_close($curl);
 ?>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <script src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="http://localhost:8998/dft.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="http://localhost:8998/dft.css">
 </head>
 
 <body>
-  <?php
-  echo $response['results']['content']['html'];
-  ?>
-  <script src="http://localhost:3032/client.js"></script>
+    <?php
+    echo $response['results']['content']['html'];
+    ?>
+    <script src="http://localhost:3032/client.js"></script>
 </body>
 
 </html>
