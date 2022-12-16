@@ -32,12 +32,12 @@
     "webpack-cli": "^3.2.3"
   },
   "dependencies": {
-    "@dafiti/poc-lib-frontend-new-web": "https://github.com/dafitibrunocosta/poc-lib-frontend-new-web",
     "express": "^4.16.4",
     "hypernova": "^2.5.0",
     "hypernova-react": "^2.1.0",
     "prop-types": "^15.7.2",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.6"
   }
