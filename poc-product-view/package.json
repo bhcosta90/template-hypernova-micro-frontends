@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "NODE_OPTIONS=--openssl-legacy-provider && tsc && webpack --mode production",
+    "build": "tsc && webpack --mode production",
     "dev": "vite",
     "start": "node dist/server.js",
     "tsc": "tsc"
