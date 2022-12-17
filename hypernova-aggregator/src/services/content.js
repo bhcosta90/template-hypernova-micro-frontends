@@ -10,7 +10,7 @@ module.exports.getContent = () => {
         items: [
           {
             title: 'Product 1',
-            imageUrl: 'https://via.placeholder.com/150'
+            image: 'https://via.placeholder.com/150'
           }
         ]
       }
