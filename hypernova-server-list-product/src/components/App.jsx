@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import NavBar from './NavBar';
 import Button from './Button';
 
-class Header extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,13 +42,13 @@ class Header extends React.Component {
   }
 }
 
-Header.propTypes = {
+App.propTypes = {
   title: PropTypes.string.isRequired,
   links: NavBar.propTypes.links,
 };
 
-Header.defaultProps = {
+App.defaultProps = {
   links: [],
 };
 
-export default Header;
+export default App;

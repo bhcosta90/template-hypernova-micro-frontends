@@ -1,6 +1,4 @@
 import { renderReact } from 'hypernova-react';
 
-import Header from './components/Header';
-
-
-renderReact('Header', Header);
+import App from "./components/App";
+renderReact("App", App);

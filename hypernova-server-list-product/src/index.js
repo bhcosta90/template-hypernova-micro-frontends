@@ -3,13 +3,13 @@ import path from 'path';
 import hypernova from 'hypernova/server';
 import { renderReact } from 'hypernova-react';
 
-import Header from './components/Header';
+import App from "./components/App";
 
 hypernova({
   devMode: true,
   getComponent(name) {
-    if (name === 'Header') {
-      return renderReact(name, Header);
+    if (name === 'App') {
+      return renderReact(name, App);
     }
 
     return null;
@@ -18,9 +18,7 @@ hypernova({
 
   createApplication() {
     const app = express();
-
     app.use(express.static(path.join(process.cwd(), 'dist')));
-
     return app;
   },
 });
