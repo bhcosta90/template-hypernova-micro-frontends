@@ -18,7 +18,7 @@ const server = {
   },
   plugins: [new NodemonPlugin()],
   resolve: {
-    extensions: [".js", ".ts", ".tsx"],
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
   },
 };
 
@@ -39,7 +39,7 @@ const client = {
     ],
   },
   resolve: {
-    extensions: [".js", ".ts", ".tsx"],
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
   },
 };
 

@@ -4,7 +4,7 @@ const axios = require('axios')
 module.exports.getContent = () => {
   return axios.post('http://0.0.0.0:3030/batch', {
     content: {
-      name: 'ProductList',
+      name: 'Header',
       data: {
         title: 'Products',
         items: [
@@ -17,6 +17,6 @@ module.exports.getContent = () => {
     }
   })
     .then(({ data }) => {
-      return data.results.content
+      return data.results
     })
 }
