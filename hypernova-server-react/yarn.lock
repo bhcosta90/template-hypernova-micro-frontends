@@ -205,10 +205,6 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@dafiti/poc-lib-frontend-new-web@https://github.com/dafitibrunocosta/poc-lib-frontend-new-web":
-  version "0.0.0"
-  resolved "https://github.com/dafitibrunocosta/poc-lib-frontend-new-web#cacb324dfbb92062cca3c9fa5fe7887b6e79e746"
-
 "@emotion/is-prop-valid@^1.1.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-1.2.0.tgz#7f2d35c97891669f7e276eb71c83376a5dc44c83"
@@ -1510,11 +1506,6 @@ base@^0.11.1:
     isobject "^3.0.1"
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
-
-bhcosta90-poc-lib-frontend-new-web@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/bhcosta90-poc-lib-frontend-new-web/-/bhcosta90-poc-lib-frontend-new-web-0.5.1.tgz#3c7496131c43c4c0d3ceff9b1af5587bc0af8b55"
-  integrity sha512-CAg9fZyF05KeC4+YFDA72gJZLXVuD7HF1QVCWXNaV8po05Tj7NyEFMkOUBhTicx/WFL8oYRJUT8LLsN75eHffg==
 
 big.js@^5.2.2:
   version "5.2.2"

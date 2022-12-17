@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import NavBar from './NavBar';
+import Button from './Button';
 
 class Header extends React.Component {
   constructor(props) {
@@ -35,6 +36,7 @@ class Header extends React.Component {
         <span className="k-header__space" />
         <span>{`Items Clicked: ${itemsSelected}`}</span>
         <NavBar links={links} />
+        <Button />
       </header>
     );
   }
