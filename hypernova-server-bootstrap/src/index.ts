@@ -14,11 +14,17 @@ hypernova({
 
     return null;
   },
-  port: process.env.PORT || 3030,
+  port: process.env.PORT || 3032,
 
   createApplication() {
     const app = express();
     app.use(express.static(path.join(process.cwd(), 'dist')));
+
+    app.use(function (req, res, next) {
+      res.setHeader("Access-Control-Allow-Origin", "*");
+      next();
+    });
+    
     return app;
   },
 });

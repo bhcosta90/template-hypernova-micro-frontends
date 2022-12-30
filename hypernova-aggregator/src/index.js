@@ -30,8 +30,8 @@ app.get('/', async (req, res) => {
     <body>
       ${header.html}
       ${content.html}
-      <script src="http://localhost:3030/client.js"></script>
       <script src="http://localhost:3031/client.js"></script>
+      <script src="http://localhost:3032/client.js"></script>
     </body>
     </html>
   `;

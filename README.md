@@ -11,15 +11,16 @@ yarn startAll
 ```
 
 This will start the following processes:
-- hypernova-server-bootstrap on port `3030`
+- hypernova-server-vue on port `3030`
 - hypernova-server-react on port `3031`
-- poc-product-view on port `3032`
+- hypernova-server-bootstrap on port `3032`
 - hypernova-aggregator on port `8080`
 
-To visualize in php, you need to start a service `poc-product-view`
+To visualize in php, you need to start a service `hypernova-server-bootstrap`
 ```sh
-cd poc-product-view
-yarn start
+cd hypernova-aggregator
+yarn buildAll
+yarn startAll
 ```
 
 In other terminal you need to execute this command
