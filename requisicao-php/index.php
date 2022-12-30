@@ -1,6 +1,6 @@
 <?php
-include_once './product.php';
-include_once './header.php';
+include_once './includes/product.php';
+include_once './includes/header.php';
 $product = getProduct();
 $header = getHeader();
 ?>
