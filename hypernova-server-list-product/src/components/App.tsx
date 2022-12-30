@@ -16,8 +16,7 @@ type ProductProps = {
 }
 
 export const App = (props: AppProps) => {
-  const [products, setProducts] = useState([]);
-  // const [products, setProducts] = useState<ProductProps[]>([]);
+  const [products, setProducts] = useState<ProductProps[]>([]);
 
   useEffect(() => {
     if (products.length === 0) {
