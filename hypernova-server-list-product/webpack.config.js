@@ -10,21 +10,21 @@ const server = {
   module: {
     rules: [
       {
-        test: /\.(js|ts)x?$/, // add |ts
+        test: /\.tsx?$/,
+        use: "ts-loader",
         exclude: /node_modules/,
-        use: "babel-loader",
       },
     ],
   },
   plugins: [new NodemonPlugin()],
   resolve: {
-    extensions: [".js", ".jsx", ".ts", ".tsx"],
+    extensions: [".tsx", ".ts", ".js"],
   },
 };
 
 const client = {
   target: "web",
-  entry: path.join(__dirname, "src/client.js"),
+  entry: path.join(__dirname, "src/client.ts"),
   output: {
     path: path.join(__dirname, "dist"),
     filename: "client.js",
@@ -32,14 +32,14 @@ const client = {
   module: {
     rules: [
       {
-        test: /\.(js|ts)x?$/, // add |ts
+        test: /\.tsx?$/,
+        use: "ts-loader",
         exclude: /node_modules/,
-        use: "babel-loader",
       },
     ],
   },
   resolve: {
-    extensions: [".js", ".jsx", ".ts", ".tsx"],
+    extensions: [".tsx", ".ts", ".js"],
   },
 };
 

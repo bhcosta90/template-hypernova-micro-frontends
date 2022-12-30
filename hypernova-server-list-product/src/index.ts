@@ -7,7 +7,7 @@ import App from "./components/App";
 
 hypernova({
   devMode: true,
-  getComponent(name) {
+  getComponent(name: string) {
     if (name === 'App') {
       return renderReact(name, App);
     }

@@ -16,8 +16,8 @@ type ProductProps = {
 }
 
 export const App = (props: AppProps) => {
-  const [products, setProducts] = useState([]);
-  // const [products, setProducts] = useState<ProductProps[]>([]);
+  // const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState<ProductProps[]>([]);
 
   useEffect(() => {
     if (products.length === 0) {
@@ -64,7 +64,7 @@ export const App = (props: AppProps) => {
     </Row>
 
     <Button variant='primary' className='mt-3' onClick={() => addProduct()}>
-      Adicionar produto
+      Add product
     </Button>
 
   </Container>
