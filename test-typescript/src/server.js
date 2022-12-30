@@ -1,0 +1,24 @@
+import express from 'express';
+import path from 'path';
+import hypernova from 'hypernova/server';
+import { renderReact } from 'hypernova-react';
+
+import App from "./component/app";
+
+hypernova({
+  devMode: true,
+  getComponent(name) {
+    if (name === 'App') {
+      return renderReact(name, App);
+    }
+
+    return null;
+  },
+  port: process.env.PORT || 3030,
+
+  createApplication() {
+    const app = express();
+    app.use(express.static(path.join(process.cwd(), 'dist')));
+    return app;
+  },
+});
