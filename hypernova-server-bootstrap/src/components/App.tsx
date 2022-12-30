@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container'
-import Button from 'react-bootstrap/Button'
+import Button from './Button'
 
 type AppProps = {
   title: string;
@@ -62,7 +62,7 @@ export const App = (props: AppProps) => {
       )}
     </Row>
 
-    <Button variant='primary' className='mt-3' onClick={() => addProduct()}>
+    <Button className='mt-3' onClick={() => addProduct()}>
       Adicionar produto
     </Button>
 

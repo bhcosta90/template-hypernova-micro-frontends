@@ -8,6 +8,7 @@ sh setup.sh
 cd hypernova-aggregator
 yarn buildAll
 yarn startAll
+http://localhost:8080
 ```
 
 This will start the following processes:
