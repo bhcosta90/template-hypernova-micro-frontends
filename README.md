@@ -11,7 +11,7 @@ yarn startAll
 ```
 
 This will start the following processes:
-- hypernova-server-vue on port `3030`
+- hypernova-server-bootstrap on port `3030`
 - hypernova-server-react on port `3031`
 - poc-product-view on port `3032`
 - hypernova-aggregator on port `8080`
